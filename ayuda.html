@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda — Herramientas PDF</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23b91c1c%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22%3EPDF%3C/text%3E%3C/svg%3E">
+<style>
+:root{--r:#b91c1c;--claro:#fef2f2;--borde:#e2e5ea;--texto:#1f2633;--suave:#5f6b7c}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--texto);line-height:1.6;background:#fff}
+header{border-bottom:1px solid var(--borde);padding:12px 20px;display:flex;align-items:center;gap:10px;position:sticky;top:0;background:#fff}
+header .logo{display:inline-grid;place-items:center;width:34px;height:30px;border-radius:6px;background:var(--r);color:#fff;font-size:11px;font-weight:800}
+header h1{font-size:17px;margin:0;flex:1}
+header a{border:1px solid var(--borde);border-radius:8px;padding:6px 12px;text-decoration:none;color:var(--texto)}
+main{max-width:820px;margin:0 auto;padding:10px 20px 80px}
+h2{color:var(--r);border-bottom:2px solid var(--claro);padding-bottom:4px;margin-top:36px;scroll-margin-top:64px}
+.indice{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0}
+.indice a{background:var(--claro);color:var(--r);border-radius:20px;padding:3px 12px;text-decoration:none;font-size:14px}
+.caja{background:#f0fdf4;border-left:4px solid #16a34a;padding:10px 14px;border-radius:4px;margin:14px 0}
+.caja.amarilla{background:#fffbeb;border-color:#f59e0b}
+code{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;padding:0 4px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--borde);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f6f7f9}
+</style>
+</head>
+<body>
+<header><span class="logo">PDF</span><h1>Ayuda — Herramientas PDF</h1><a href="index.html">← Volver</a></header>
+<main>
+<div class="caja"><b>🔒 Privacidad:</b> tus archivos se procesan en tu propio dispositivo. No se suben a ningún servidor, no hay registro y no quedan copias. Puedes usarlo con documentos personales o institucionales.</div>
+<div class="indice"><a href="#unir">Unir</a><a href="#organizar">Organizar</a><a href="#dividir">Dividir</a><a href="#comprimir">Comprimir</a><a href="#imagenes">Imágenes a PDF</a><a href="#aimagen">PDF a imágenes</a><a href="#numerar">Numerar</a><a href="#marca">Marca de agua</a><a href="#firmar">Firmar</a><a href="#problemas">Problemas</a></div>
+
+<h2 id="unir">🔗 Unir PDF</h2>
+<p>Selecciona dos o más PDF (puedes elegir varios a la vez o arrastrarlos). Ordénalos con ↑ ↓ y pulsa <b>Unir</b>. Se descarga <code>unido.pdf</code>.</p>
+
+<h2 id="organizar">🗂 Organizar páginas</h2>
+<p>Muestra una miniatura de cada página. Puedes:</p>
+<ul><li><b>Reordenar:</b> arrastra una miniatura sobre otra, o usa ◀ ▶ (más cómodo en el celular).</li>
+<li><b>Girar:</b> ↺ ↻ en cada página, o «Rotar todas» para escaneos de lado.</li>
+<li><b>Eliminar:</b> ✕ quita la página.</li></ul>
+<p>Pulsa <b>Guardar PDF</b> para descargar el resultado. El archivo original no se modifica.</p>
+
+<h2 id="dividir">✂ Dividir y extraer</h2>
+<table>
+<tr><th>Opción</th><th>Resultado</th></tr>
+<tr><td>Extraer páginas en un solo PDF</td><td>Un PDF con las páginas indicadas, p. ej. <code>1-3, 5, 8-</code> («8-» = de la 8 al final).</td></tr>
+<tr><td>Un PDF por cada rango</td><td>Con <code>1-3, 4-6</code> obtienes dos archivos.</td></tr>
+<tr><td>Separar todas las páginas</td><td>Un PDF por página, dentro de un ZIP.</td></tr>
+<tr><td>Dividir cada N páginas</td><td>Por ejemplo, cada 2 páginas (útil para separar exámenes escaneados en lote).</td></tr>
+</table>
+
+<h2 id="comprimir">🗜 Comprimir PDF</h2>
+<table>
+<tr><th>Nivel</th><th>Qué hace</th><th>Cuándo usarlo</th></tr>
+<tr><td>Ligera</td><td>Reorganiza el archivo sin tocar el contenido. El texto sigue seleccionable.</td><td>Documentos de texto; la reducción suele ser pequeña.</td></tr>
+<tr><td>Recomendada / Fuerte / Máxima</td><td>Convierte cada página en una imagen comprimida (150, 110 u 80 ppp).</td><td>Escaneos, fotos de documentos y PDF con muchas imágenes: la reducción puede superar el 80 %.</td></tr>
+</table>
+<div class="caja amarilla">En los niveles que convierten a imagen, el texto ya no se puede seleccionar ni buscar. Si el resultado no es más pequeño que el original, la herramienta te lo dice para que conserves el original.</div>
+
+<h2 id="imagenes">🖼 Imágenes a PDF</h2>
+<p>Convierte fotos (JPG, PNG, WebP…) en un PDF, una imagen por página. Elige tamaño A4, Carta o «igual a la imagen», márgenes y calidad. La orientación se ajusta sola, y las fotos del celular se colocan derechas.</p>
+
+<h2 id="aimagen">📸 PDF a imágenes</h2>
+<p>Convierte páginas en JPG o PNG. Para presentaciones o redes sociales, 150 ppp basta; para imprimir, usa 300 ppp. Si son varias páginas, se descargan en un ZIP.</p>
+
+<h2 id="numerar">🔢 Numerar páginas</h2>
+<p>Elige posición, formato («1», «Página 1», «1 de 10»…), número inicial y tamaño. Marca «No numerar la primera página» si el documento tiene portada.</p>
+
+<h2 id="marca">💧 Marca de agua</h2>
+<p>Escribe un texto (por ejemplo «BORRADOR», «CONFIDENCIAL» o el nombre de tu curso), su tamaño, color, dirección y transparencia. Se aplica a todas las páginas. Si el texto es más largo que la página, se reduce automáticamente.</p>
+
+<h2 id="firmar">✍ Firmar PDF</h2>
+<ol>
+<li>Crea tu firma: <b>dibújala</b> con el mouse o con el dedo, <b>escribe</b> tu nombre en letra manuscrita, o <b>sube una imagen</b> (una foto de tu firma en papel blanco sirve: el fondo blanco se vuelve transparente).</li>
+<li>Pulsa <b>Usar esta firma</b>.</li>
+<li>Haz clic en la página donde quieres la firma. Ajusta el tamaño con el control deslizante (cambia la última firma colocada en esa página). Usa ◀ ▶ para firmar otras páginas y <b>Deshacer</b> si te equivocas.</li>
+<li>Pulsa <b>Guardar PDF firmado</b>.</li>
+</ol>
+<div class="caja amarilla">Esta es una firma <b>visual</b> (una imagen de tu firma), adecuada para la mayoría de trámites cotidianos. No es una firma digital certificada con criptografía; si una entidad exige firma digital certificada, debe hacerse con un certificado emitido por una entidad autorizada.</div>
+
+<h2 id="problemas">Problemas frecuentes</h2>
+<p><b>«Este PDF está protegido con contraseña»:</b> la herramienta no puede editar PDF cifrados. Ábrelo con la contraseña en tu lector de PDF y guárdalo (o imprímelo como PDF) sin protección.</p>
+<p><b>Va lento con archivos grandes:</b> todo se procesa en tu dispositivo. Con PDF de cientos de páginas o en celulares sencillos, comprimir y convertir a imágenes puede tardar; espera a que termine el mensaje «Procesando…».</p>
+<p><b>No se descarga el archivo:</b> revisa si el navegador bloqueó descargas múltiples o automáticas, y usa el botón <b>Descargar de nuevo</b>.</p>
+<p><b>Funciona sin internet:</b> una vez cargada la página, las herramientas siguen funcionando aunque se pierda la conexión.</p>
+</main>
+</body>
+</html>

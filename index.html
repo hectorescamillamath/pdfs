@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herramientas PDF — gratis y privadas</title>
+<meta name="description" content="Une, divide, organiza, comprime, firma y convierte PDF directamente en tu navegador. Tus archivos nunca se suben a un servidor.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23b91c1c%22/%3E%3Ctext x=%2216%22 y=%2221%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22%3EPDF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="barra">
+  <a href="#" class="marca"><span class="logo">PDF</span><span>Herramientas PDF</span></a>
+  <span class="privado" title="Los archivos se procesan en tu dispositivo">🔒 Tus archivos no salen de tu equipo</span>
+  <a href="ayuda.html" class="ayuda" target="_blank" rel="noopener">📘 Ayuda</a>
+</header>
+
+<main id="vista"></main>
+
+<footer class="pie">Gratis, sin registro y sin límites. Todo se procesa en tu navegador con pdf-lib y PDF.js.</footer>
+
+<div id="cargando" class="cargando" hidden><div class="caja-carga"><div class="giro"></div><div id="cargaTxt">Procesando…</div></div></div>
+
+<script src="lib/pdf-lib.min.js"></script>
+<script src="lib/jszip.min.js"></script>
+<script type="module" src="js/app.js"></script>
+<noscript><p style="padding:20px">Esta aplicación necesita JavaScript.</p></noscript>
+</body>
+</html>
